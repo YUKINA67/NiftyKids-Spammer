@@ -16,7 +16,7 @@ option = int(input("投票するオプションを1から5の間で選択して�
 kaisuu = int(input("投票する回数を入力してください: "))
 
 def touhyou(url, option):
-    service = Service("C:\\Users\\mingq\\OneDrive\\デスクトップ\\chromedriver_win32\\chromedriver.exe") # chrome driverのぱす
+    service = Service("") # chrome driverのぱす
     driver = webdriver.Chrome(service=service)
     driver.get(url)
 
