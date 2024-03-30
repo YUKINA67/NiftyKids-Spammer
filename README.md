@@ -1,4 +1,4 @@
-#　NiftyKidsの投票数を増やします
+# NiftyKidsの投票数を増やします
 
 ## 使い方
 >chrome driverをダウンロードします
