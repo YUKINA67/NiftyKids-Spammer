@@ -1,3 +1,10 @@
+# 使用できない場合
+# VPNまたはProxyを使用してください
+# GoogleChromeがインストールされているか確認してください
+# GoogleChromeとChromeDriverの互換性があるか確認してください
+# ChromeDriverのパスが正しいか確認してください
+# ファイルパスの\を二つにしてください
+# これでもできない場合はDiscord @yukina67のDMまで
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -35,24 +42,24 @@ def touhyou(url, option):
     complete_btn.click()
     
     time.sleep(0.01) # 閉じるまで何秒か
-    
+    print("success：投票成功！")
     driver.quit()
 
-print("投票を開始します")
+    print("投票を開始します")
 
 for _ in range(kaisuu):
     thread = threading.Thread(target=touhyou, args=(url, option))
     threads.append(thread) 
     thread.start()
     
-    time.sleep(3) # 遅延
+    time.sleep(2.5) # 遅延
     # 高スペック 2.5以下
     # 低スペック 5.3以上
     # 長時間やる場合はさらに遅延を増やすことを推奨します
     # 少ない数を何回もやったほうが効率的だと思います
     # インターネットの環境にもよるので自分で試して決めてください 
 
-for thread in threads: 
-    thread.join()
+    for thread in threads: 
+        thread.join()
 
-print("全ての投票が完了しました。")
+    print("全ての投票が完了しました。")
