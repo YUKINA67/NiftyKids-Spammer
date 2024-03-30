@@ -18,9 +18,10 @@ threads = []
 
 url = "https://kids.nifty.com/cs/catalog/kids_vote/result/1.htm?aid=240325569306"
 
-print("このツールはゆきなさんが作りました、あまりゆきなさんを舐めるなよ\nちんちんは舐めてもらうけどな(笑)\n\n") 
+print("このツールはゆきなさんが作りました、あまりゆきなさんを舐めるなよ\nちんちんは舐めてもらうけどな(笑)\n\n")
 option = int(input("投票するオプションを1から5の間で選択してください: "))
 kaisuu = int(input("投票する回数を入力してください: "))
+print("投票を開始します")
 
 def touhyou(url, option):
     service = Service("") # chrome driverのぱす
@@ -42,24 +43,24 @@ def touhyou(url, option):
     complete_btn.click()
     
     time.sleep(0.01) # 閉じるまで何秒か
-    print("success：投票成功！")
-    driver.quit()
 
-    print("投票を開始します")
+    print("success：投票成功！")
+
+    driver.quit()
 
 for _ in range(kaisuu):
     thread = threading.Thread(target=touhyou, args=(url, option))
     threads.append(thread) 
     thread.start()
     
-    time.sleep(2.5) # 遅延
-    # 高スペック 2.5以下
+    time.sleep(2)
+        # 高スペック 2.5以下
     # 低スペック 5.3以上
     # 長時間やる場合はさらに遅延を増やすことを推奨します
     # 少ない数を何回もやったほうが効率的だと思います
     # インターネットの環境にもよるので自分で試して決めてください 
 
-    for thread in threads: 
-        thread.join()
+for thread in threads: 
+    thread.join()
 
-    print("全ての投票が完了しました。")
+print("全ての投票が完了しました。")
