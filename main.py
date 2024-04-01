@@ -16,7 +16,7 @@ import time
 
 threads = [] 
 
-url = "https://kids.nifty.com/cs/catalog/kids_vote/result/1.htm?aid=240325569306"
+url = "https://kids.nifty.com/cs/catalog/kids_vote/result/1.htm?aid=240325569308"
 
 print("このツールはゆきなさんが作りました、あまりゆきなさんを舐めるなよ\nちんちんは舐めてもらうけどな(笑)\n\n")
 option = int(input("投票するオプションを1から5の間で選択してください: "))
@@ -28,9 +28,9 @@ def touhyou(url, option):
     driver = webdriver.Chrome(service=service)
     driver.get(url)
 
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "240325569306_vote4")))
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "240325569308_vote4")))
 
-    vote_option_id = "240325569306_vote" + str(option)
+    vote_option_id = "240325569308_vote" + str(option)
     vote_option = driver.find_element(By.ID, vote_option_id)
     vote_option.click()
 
