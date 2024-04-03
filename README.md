@@ -1,11 +1,24 @@
 # NiftyKidsの投票数を増やします
 
 ## 使い方
->chrome driverをダウンロードします
+>1.Pythonを入れます
 
->service = Service("")の中にchrome driverのパスを入力します
 
->遅延を設定します
+>2.必要なライブラリを入れます
+
+
+>↓必要なライブラリ一覧
+
+
+>```pip install requests ```
+
+
+>```pip install selenium ```
+
+
+>```pip install beautifulsoup4```
+
+>cmdを開きmain.pyを実行
 
 ## 使用できない場合
 >VPN又はProxyを通して実行してください
