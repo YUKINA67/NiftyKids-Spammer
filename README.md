@@ -10,15 +10,14 @@
 >↓必要なライブラリ一覧
 
 
->```pip install requests ```
+```pip install requests ```
 
 
->```pip install selenium ```
+```pip install selenium ```
 
 
->```pip install beautifulsoup4```
-
->cmdを開きmain.pyを実行
+```pip install beautifulsoup4```
+cmdを開きmain.pyを実行
 
 ## 使用できない場合
 >VPN又はProxyを通して実行してください
