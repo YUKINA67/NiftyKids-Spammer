@@ -10,17 +10,17 @@
 >↓必要なライブラリ一覧
 
 
-```pip install requests ```
+- ```pip install requests ```
 
 
-```pip install selenium ```
+- ```pip install selenium ```
 
 
-```pip install beautifulsoup4```
+- ```pip install beautifulsoup4```
 
 
 
-cmdを開きmain.pyを実行
+> 3.cmdを開きmain.pyを実行
 
 ## 使用できない場合
 >VPN又はProxyを通して実行してください
@@ -29,5 +29,8 @@ cmdを開きmain.pyを実行
 >pyファイルが使用できない場合はexeversion.zipにあるexeファイルを使用してください
 
 1週間に1回サイトの仕様変わって使えなくなります
+
+
+
 お問い合わせはDiscord @yukina67まで
 
