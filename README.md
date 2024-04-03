@@ -17,6 +17,9 @@
 
 
 ```pip install beautifulsoup4```
+
+
+
 cmdを開きmain.pyを実行
 
 ## 使用できない場合
